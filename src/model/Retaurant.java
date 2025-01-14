@@ -20,6 +20,7 @@ public class Retaurant {
         }
     }
     public void proccessOrder(Order order){
+        order.setStatus("Preparing");
         for (Order eachorder : orders){
             eachorder.updatStatus(order.getStatus());
         }
